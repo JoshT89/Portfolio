@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6; /* More subtle background */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FF4500;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    position: relative;
+    height: 55px;  /* Example height, adjust to your header's height */
+}
+
+#nav-image {
+    width: 50px;         /* Set a fixed width */
+    height: auto;        /* Maintain aspect ratio */
+    border-radius: 100%; /* Makes the image round */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* A slight shadow for depth */
+    transition: transform 0.3s ease; /* For a hover effect */
+    
+    
+    position: absolute;
+    top: 50%;            /* Position at the vertical center */
+    right: 20px;         /* Right position with 10px spacing */
+    transform: translateY(-50%);  /* Adjust for true vertical centering */
+}
+
+#nav-image:hover {
+    transform: translateY(-50%) scale(2); 
+   
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+section {
+    display: none;
+    padding: 50px;
+    background-color: #ffffff; 
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h1, h3 {
+    margin-top: 0;
+}
+
+#content-container {
+    display: block;
+    padding: 50px;
+}
+
+.container {
+    width: 80%;   /* Adjusts based on viewport width */
+    max-width: 1200px; /* Can use fixed width here to limit the maximum size */
+    margin: 0 auto; /* Centers the container */
+}
+
+img {
+    max-width: 100%; /* Allows the image to scale */
+    height: auto;    /* Maintains aspect ratio */
+}
+
+@media screen and (max-width: 600px) {
+    /* Styles for screens less than or equal to 600px wide */
+    body {
+        font-size: 0.9rem;
+    }
+    
+    .header, .footer {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Styles for screens between 601px and 900px wide */
+    body {
+        font-size: 1rem;
+    }
+    
+    .header, .footer {
+        padding: 20px;
+    }
+}
+.column {
+    float: left;
+    width: 50%; /* For 2-column layout */
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%; /* Stacks columns on top of each other for smaller screens */
+    }
+}
