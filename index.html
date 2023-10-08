@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
-    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Your Portfolio</title> 
 </head>
 <body>
     <header class="header-container">
@@ -15,105 +18,172 @@
         <li><a href="#about" class="clickable-header" data-content="#about">About me</a></li>
         <li><a href="#journey" class="clickable-header" data-content="#journey">Journey so far</a></li>
         <li><a href="#experience" class="clickable-header" data-content="#experience">Experience</a></li>
-        <img src="resources\Teatub.jpg" alt="Cup of tea in a hot tub" id="nav-image">
+        <li><a href="#projects" class="clickable-header" data-content="#projects">Projects coming soon</a></li>
+        <img src="resources\Teatub.jpg" alt="Cup of tea in a hot tub" id="logo">
             </ul>
-            
-
         </nav>
     </header>
-    <section id="test" style="display:none;">
-    // insert landing page //
-</section>
+        <!-- Hamburger menu i cant get working 
+        <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#intro" onclick="toggleMenu()" data-content="#intro">Introduction</a></li>
+                    <li><a href="#about" onclick="toggleMenu()" data-content="#about">About me</a></li>
+                    <li><a href="#journey" onclick="toggleMenu()" data-content="#journey">Journey so far</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()" data-content="#experience">Experience</a></li>
+                </ul>
+            </div>
+            </div>
+            </nav>
+        -->
+    
+     
+
+        
+    <div id="landing">
+        <h1>Joshua Hedges-Turner</h1>
+        <img src="resources/Selfie.jpg" alt="Me" id="landing-img">
+        <h2>Front-End Developer</h2>
+    </div>
 
     <section id="intro">
         <h1>Hello everybody and welcome to my Portfolio!</h1>
-<h3>My name is Joshua Turner and this year I decided to improve my life dramatically.</h3>
+<h3>My name is Joshua Turner and this year I decided to improve my life dramatically. (Hope you enjoy the pictures!).</h3>
 <div>
-    <p>Have you ever just been sat at your desk at work after a long day of doing the same thing you did the previous 4 days of the week and thought "I'm not sure I want to do this for another 30years until I retire". 
+    <p>Have you ever just been sat at your desk at work, in a warm office after a long day of doing the same thing you did the previous 4 days and learnt nothing new? 
+        One day I thought to myself "I'm not sure I want to do this for another 30years until I retire". 
     If your answer is yes then I believe you will find this portfolio very relatable and hopefully inspire you to make a change too.</p>
 </div>
         <div>
-            <p>A very good friend of mine who trained himself to be a senior Back-End Developer in just 6 years, now is able to work remotley from anywhere in the world while earning a very respectable salary.
-            </p>
-        </div>
-        <h3>I realised coding would be perfect for me for 3 main reasons:</h3>
+            <p>A very good <span class="hover-image">friend
+                <span class="image-popup">
+                    <img src="resources/codermate.jpg" alt="Friend who got me into coding">
+                </span>
+            </span> of mine who trained himself to be a Senior Devops Engineer in just 5 years, now is able to work remotley from anywhere in the world while earning a very respectable salary
+            and not only that, he thoroughly enjoys his work and is <span class="hover-image">happy<span class="image-popup">
+                <img src="resources/pool.jpg.jpg" alt="Friend setting up pool balls."> <img src="resources/golf.jpg.jpg" alt="Friend teeing off when we played in Barcelona."></span></span>.</p>
+         
+        <h3>I realised coding would be perfect for me for 2 main reasons:</h3>
             <div>
                 <ol>
                     <li>The first reason and most important reason for me is, there is always something new to learn, coding is literally endless learning and learning something new everyday 
                         makes me enjoy my work. You know what they say "if you enjoy your work, are you really working?".
                     </li>
-                    <li>The second reason is flexibility. As most roles are hybrid or purely remote working there is the option to travel abit, obviously not too far from the country you work in Ha!.
-                        This allows a change of scenery and new adventures for outside of work, which gives me a chance to see more of the world and clench my need for adventure and meeting new people.
+                    <li>The second reason is flexibility. As most roles are hybrid or purely remote working, there is the option to travel abit, obviously not too far from the country you work in.
+                        This allows a change of scenery and new <span class="hover-image">adventures<span class="image-popup">
+                            <img src="resources/dolphin.jpg" alt="Me standing on wo dolphins."></span>
+                        </span> for outside of work, which gives me a chance to see more of the world and clench my need for adventure and meeting new people.
                     </li>
-                    <li>The third most important reason is, I've always wanted to have my own fitness and wellbeing app. Having battled through anxiety myself, I'd like to help others and soon I will be
-                        able to create a free app in my spare time and achieve this goal myself. This would put my satisfaction level at about 10,000 Ha!.   
-                    </li>
+                    
                 </ol>
             </div>
+            
     </section>
 
     <section id="about">
-        <h1>This section is just all about me, from special moments in my life I'm happy to share, to my favourite foods and music.</h1>
-        <p>So it all began back in May 1989 when I was born in Milton Keynes but bred in Gozo I've sadly been told "shivers". My parents owned a resturant in a town called Stony Stratford called Ruby Tuesdays. 
-            Sadly they had to let the resturant go and they decided to move to Gozo. I think I was about 2 or 3 years old at this stage but do have alot of memories of living there. 
-            One of which was I went to a school which was run by nuns and funnily enough when i came back to Stony Stratford about 3 years later and started in year 1. I had the best spelling, handwriting and grammar so fair play to those nuns.
+        <h1>This section is just all about me, from special moments in my life I'm happy to share.</h1>
+        <p>So it all began back in May 1989 when I was born in Milton Keynes but bred in Gozo I've sadly been told "shivers". We did actually move to <span class="hover-image">Gozo<span class="image-popup">
+            <img src="resources/babyjosh.jpg" alt="Me as a baby in Gozo."></span>
+        </span> when I think I was about 2 or 3 years old, but luckily do have alot of memories of living there. 
+            One of which was I went to a school which was run by nuns and funnily enough when I came back to Stony Stratford about 3 years later and started in year 1. I had the best spelling, handwriting and grammar so fair play to those nuns.
         </p>
             <div>
                 <p>I believe due to being an only child I have always found it easy to make friends anywhere I go, well technically I do have a half sister but she is older and we never lived together,
-                     as my parents had me rather late Ha!.</p>
+                     as my <span class="hover-image">parents<span class="image-popup">
+                        <img src="resources/family.jpg" alt="Me and my parents."></span></span> had me rather late.</p>
             </div>
             <div>
-                <p>I'm one of the lucky people who actaully enjoyed school especially the later years, so many stories to remember. I got my first job at 14 as a kitchen porter at The Old George in Stony Stratford. 
-                    I worked every sunday and earned £4 an hour for 6 hours in a very hot and small kicthen, where the Sunday roast spit will be in full rotation and the dish washer was permanently broken as far as i could tell Ha!
+                <p>I'm one of the lucky people who actaully enjoyed school especially the later years, so many stories to remember. I got my first job at 14 while still at school as a kitchen porter at The Old George in Stony Stratford. 
+                    I worked every sunday and earned £4 an hour for 6 hours in a very hot and small kicthen, where the Sunday roast spit will be in full rotation and the dish washer was permanently broken as far as i could tell.
                 </p>
             </div>
             <div>
-                <p>At one point in my life in my early 20s, I was a Personal Trainer and a Snowboard Instructor which were both incredibly fun and rewarding jobs just not finacially Ha! but I did meet the best people.
+                <p>At one point in my life in my early 20s, I was a Personal Trainer and a <span class="hover-image">
+                    Snowboard Instructor
+                    <span class="image-popup">
+                    <img src="resources/snowboard.jpg" alt="Me snowboarding">
+                </span>
+            </span>, which were both incredibly fun and rewarding jobs just not finacially Ha! but I did meet the best people. Being a snowboard instructor opened up the doors to one of the best holidyas of my life, when I went on a BUSC event with the Scottish universities 
+                    to the french alps. This was by far one of the greatest trips I have ever been on, partying in the beautiful <span class="hover-image">mountains<span class="image-popup">
+                        <img src="resources/alps.jpg" alt="Standing with my board with the French Alps behind me">
+                    </span>
+                </span> with thousands of students was incredible and the snowboarding was good fun too.  
+                </p></div>
 
-                </p>
-                
-            </div>
-            <h3>The first time my mental health took a hit. I truly believe you have to experience the lowest lows before you can feel the highest highs</h3>
             <div>
-                <p>When i was about 27 my mother was diagnosed with cancer for the second time in just over 20 years. However this time I was alot older and it really hit me. Thankfully and touch wood my mum beat cancer and now is happily retired with my father in a posh little town near Peterborough.
-                    However I couldn't stop thinking about the next threat that was coming for me and my family even after my mum got the all clear. The best way to describe it was my brain was stuck in a hyperresponse mode constantly on the lookout for the next threats, either diseases or accidentscoming for my family.
-                    Doctors just wanted to give me pills and the CBT therapist was not at all helpful, which I waited over a year for. This broke me as I thought CBT would be my saving grace. 
+                <p>I've always had a great bunch of friends and we've done alot of travelling together, from <span class="hover-image">camping<span class="image-popup">
+                    <img src="resources/camping.jpg" alt="Camping in the New Forest">
+                </span>
+            </span> to staying at <span class="hover-image">luxury villas<span class="image-popup">
+                <img src="resources/mates1.5.jpg" alt="Barcelona villa pool">
+            </span>
+        </span> in Barcelona.
+We regulary go out for meals and luckily a few who are into golf which I adore playing but sadly do not play enough. One thing we all have 
+in common is our love for gaming online, mainly for the social side believe it or not.    
                 </p>
-                    <p>Through a contact from my mother I went to see a self taught therapist called Carmen who changed everything just by listening to me. She told me i wasnt broken and this is normal what i am going through which alone was music to my ears.
-                        Something so simple making the biggest difference. I then started a 4 year journey battling my mental health and the hardest place to battle was the workplace. However I am now stronger than ever.</p>
+                <p>One of my proudest <span class="hover-image">moments.<span class="image-popup">
+                    <img src="resources/proudmoment.jpg" alt="I was the best man for a friend ive known since year 1">
+                </span>
+            </span></p>
+            </div>
+            <h3>Mental health, fitness and wellbeing. I truly believe you have to experience the lowest lows before you can feel the highest highs</h3>
+            <div>
+                <p>When I was about 27 my mother was diagnosed with cancer for the second time in just over 20 years. However this time I was alot older and it really hit me. Thankfully and touch wood my mum beat cancer and now is happily retired with my father in a lovely little town near Peterborough.
+                    However I couldn't stop thinking about the next threat that was coming for me and my family even after my mum got the all clear. The best way to describe it was my brain was stuck in a hyperresponse mode constantly on the lookout for the next threats, either diseases or accidents coming for my family.
+                     
+                </p>
+                    <p>Through a contact from my mother I went to see a self taught therapist who changed everything just by listening to me. She told me i wasnt broken and this is normal what i am going through which alone was music to my ears.
+                        Something so simple making the biggest difference. I then started a journey constantly improving my mental health. I am now stronger than ever and very proud.</p>
             </div>
             <div>
-                <p>Now I keep myself in check by eating well - my favourite is spaghetti bolognese home made of course, excercising regulary, socialising and keeping the people I love the most, happy. Also the Wim Hof breathing teckers and cold water exposure is incredible! what a feeling it gives you, never felt so alive.
-I listen to alot of music now too and at this point today the following are my current top 5:</p>
+                <p>Now I keep myself in check by eating well, luckily myself and one of my <span class="hover-image">best mates<span class="image-popup">
+                    <img src="resources/buds.jpeg" alt="Best mate Joe"></span></span> who I live with both love our food and he is a very good cook, excercising regulary, socialising and keeping the people I love the most, happy. Also the Wim Hof breathing technique and cold water exposure is incredible! Don't knock it until you try it.
+For this reason I've always wanted to have my own fitness and wellbeing app. Having battled through anxiety myself, I'd like to help others and soon I will be
+able to create a free app in my spare time and achieve this goal myself.</p>
+
+<p>I listen to alot of music now too and at this point today the following are my current top 5:</p>
 <ol>
     <li><a href="https://open.spotify.com/track/0smyCrJiibi2uwCiq5R1vj?si=bfc83e24fe3d4702" target="_blank">Save Tonight By Eagle-Eye Cherry</a></li>
-    <li><a href="https://open.spotify.com/track/0zO8ctW0UiuOefR87OeJOZ?si=3edea2dbafcc4119" target="_blank">Collard Greens By ScHoolboy Q & Kendrick Lamar</a></li>
+    <li><a href="https://open.spotify.com/track/1bp2IO61zbQrbWNmKKxg3f?si=fb8c25bd966647fc" target="_blank">Joker By Steve Miller Band</a></li>
     <li><a href="https://open.spotify.com/track/4vl2zwXsTmAxgu9iY0g6UK?si=6da71d0fe0ce4b9f" target="_blank">I dont want to be By Gavin DeGraw</a></li>
-    <li><a href="https://open.spotify.com/track/0Tnt1pxkoNdX1ZWkRTW8f6?si=1e61147ef346460a" target="_blank">Chocolate Samurai By Fantastic Negrito</a></li>
-    <li><a href="https://open.spotify.com/track/2W2vodjw341bqlgTNPx8mb?si=d1e7a5853e654059" target="_blank">Baddest By Vibe Chemistry</a></li>
+    <li><a href="https://open.spotify.com/track/6XUHsYE38CEbYunT983O9G?si=9f231a3c20a545f5" target="_blank">Give a little bit By Supertramp</a></li>
+    <li><a href="https://open.spotify.com/track/13HaPtzk6OEREfoWcGY8xu?si=e7d4c674f8584027" target="_blank">Take me home country roads By John Denver</a></li>
 </ol>
                 
             </div>
     </section>
 
     <section id="journey">
-        <h1>The journey so far.</h1>
-        <p>It all started in december 2022 when I had just booked a doctor on a truly incredible position. But despite all my efforts the doctor still found things to negatively email my director directly about. 
-            That was the moment that changed my mindset completely and I didnt look back. Recruitment is one of those jobs that the better you get at your job, your job actually becomes tougher and more stressfull as you have many clients to look after. 
-            But how could I get similar if not better pay and a much better workign life....</p>
+        <h1>The Journey so far.</h1>
+        <p>Back in december 2022, I had just booked a doctor on a truly incredible position. But despite all my efforts it was not meant to be, which feels like you just wasted a week of hard work. 
+            That was the moment that changed my mindset completely and I didnt look back. Even though I loved my <span class="hover-image">colleagues<span class="image-popup">
+                <img src="resources/bestcolleagues.jpg" alt="Me on my last day in recrutiment with all the gang."></span></span> and didnt want to leave them, 
+                recruitment is one of those jobs that the better you get at your job, your job actually becomes tougher and more stressfull as you have many clients to look after. 
+            But how could I get similar if not better pay and a much better working life balance....</p>
         <div>
-<p>I wanted a life like my mate did in Barcelona so I started to look into coding as soon as I got home that night. I quickly found that Front-End allowed me to be creative and watch my work come to life.  
-    Plus like I said earlier I love to learn and everyone I had spoke to so far said that coding is a never ending lesson, so I was sold. "The poweres of the universe" must of been aware of my new choice as an amazing deal suddenly appeared on my instagram for 75% off Codecademy pro course!! Can you believe the luck Ha!
-Luckily Codecademy was the provide my mate used as well and they had nothing but good reviews and positive videos on youtube</p>
-<p>So i dived straight in and by the end of February I handed in my notice and started the course. I'm very lucky that I got on well with my directors who were nothing but supportive and I even still play golf with them now 
+<p>I wanted a life like my friend did in Barcelona so I started to look into coding as soon as I got home that night. I quickly found that Front-End allowed me to be creative and watch my work come to life.  
+    Plus like I said earlier I love to learn and everyone I had spoke to so far said that coding is a never ending lesson, so I was sold. "The powers of the universe" must of been aware of my new choice as 
+    an amazing deal suddenly appeared on my instagram for 50% off Codecademy pro course!! Can you believe the luck Ha!
+Luckily Codecademy was the provider my mate used as well and they had nothing but good reviews and positive videos on youtube</p>
+<p>So I dived straight in and by the end of February I handed in my notice and started the course. I'm very thankfull that I got on well with my directors who were nothing but supportive and I even still play 
+    <span class="hover-image">golf<span class="image-popup">
+    <img src="resources/golfwork.jpg" alt="Playing golf with my work colleagues."></span></span> with them now. 
 </p>
         </div>
         <div>
             <p>As soon as i started the course I was hooked. The time for the course was estimated for 8-12 months but as I wasnt working, I gave it everything I had and passed all the exams and projects within 5 months.
-                I really enjoyed the course and how well laid out it was and once I started to see the work come to life on my screen, I knew I made the right choice.  
+                I really enjoyed the course and how well laid out it was and once I started to see the work come to life on my screen, I knew I made the right choice. To see a number of the projects completed with Codecademy please feel free to click
+                on the GitHub link below (next to the email icon).
             </p>
             <p>However I am now at the toughest stage of the course which is finding that first role with no on the job experience and it is a little scary. But nothing will stop me from making this work
-                which is why I have created this portfolio to hopefully show off my skills and personailty.
+                which is why I have created this portfolio to hopefully show my skills and personailty.
             </p>
         </div>
     </section>
@@ -121,41 +191,109 @@ Luckily Codecademy was the provide my mate used as well and they had nothing but
     <section id="experience">
         <h1>Want to know about my previous experience?</h1>
         <div>
-            <p> Specialist Recruiter in Mental Health
-                Services
-                Unite Medical
-                01/2019 - 03/2023,
-                Spearheaded recruitment efforts for a diverse range of
+            <h4>Front End Engineer</h4>
+            <p>03/2023 - present</p>
+            <p>Since starting my course in March I have covered HTML, CSS, Javascript, React and Redux. I am also very familiar
+                now with Git, Node.js and understand Build Tools, Data Structures and Algortithms. I even done an introductory course on PHP as I was curious in the similariteis to HTML. Upon completing
+            the PHP course I did realise that Javascript and React is where I want to invest my time the most.</p>
+            <p>I have created this portfolio using HTML, CSS and Javascript. The HTML is handling all the text and links for pictures and icons. The CSS has created all the colours, styles, 
+size of text and pictures. Javascript is moving between each section without reloading the page, creating the hamburger icon for smaller device screen sizes,
+the randomness of the pictures coming up and ensures the navigation bar at the top scrolls down with the page.
+            </p>
+                <p>I have createrd a number of projects with Codecademy which you can find on my GitHub profile by clicking the link
+                    at the bottom of the page. I will be uploading personal projects very soon in a brand new section of my portfolio!
+                </p>
+                <p>Copyright © 2023 Joshua Hedges-Turner. All rights reserved.</p>
+                <p><a href="resources/Joshua CV.pdf" target="_blank"><i class="fas fa-file-download"></i>Download CV</a></p>
+        </div>
+        <div>
+            <h4>Specialist Recruiter in Mental Health Services</h4>
+                <p>Unite Medical
+                01/2019 - 03/2023</p>
+                <p>Spearheaded recruitment efforts for a diverse range of
                 mental health professionals, collaborating closely with
                 healthcare institutions and organizations to tailor recruitment
-                strategies and address specific staffing needs.
+                strategies and address specific staffing needs.</p>
+            <p>I thouroughly enjoyed my time with Unite Medical and I was sad to leave, mainly due to my colleagues and clients
+                that I had a built a strong bond with. I used to hear the most facsinating stories from doctors and some would come to see us
+                on the office and get us gifts on special occasions. I also got to experience alot too travelling to conventions and meeting many 
+                proffesionals and the staff parties were great fun and creative. 
             </p>
         </div>
         <div>
-            <p>Financial Managment
+            <h4>Financial Managment</h4>
                 Cabbot Financial & 118118Money
-                03/2017 - 11/2018</p>
-                <p>
-                Gas Technician
+                03/2017 - 11/2018
+                <p>I worked in finacial managment for two different companies. Started at Cabbot and then moved to 118 118 Money when I was made redundent as the site closed.
+At Cabbot I was Responsible for handling a large volume of accounts within a large team who contact customers 
+on a daily basis to help manage their financial situations whilst adhering to all aspects of compliance at all times.
+                    </p>
+                    <p>With 118118 Money I was part of the first recruitment drive to get 118118Money up and running in their Milton Keynes branch. 
+                        Helped to deliver a best in class arrears management function. Brought in fresh ideas and processes to help maximize profits while keeping the customers interest at heart.
+                    I was also made redundent from this job too, again due to site closure.</p>
+                    <h4>Gas Technician</h4>
                 Eaton Electrical
                 06/2016 - 03/2017</p>
+                <p>This postion was recommended to me by another very good friend of mine and I was rather lucky to even be considered as my previous role was snowboard instructor.
+                    Luckily the hiring manager was looking for someone with little experience as a gas technician and a fresh pair of eyes to hep bring in some fresh ideas.       
+                   </p>
+                <p>A member of a 10-strong specialised team responsible for the fabrication of components and the assembly of industrial gas analysers, minaly a product called the
+                     <a href="https://www.mtl-inst.com/product/mtl_gir6000_biogas_analyser/" target="_blank">GIR 6000.</a> In the beginning I had to take many saftey courses especially as I was going
+                    to be mixing very dangerous gasses to measure there oxygen content. Eventually I was task with teaching very experienced engineers how to mix and measure gasses in a lab, which at 
+                first they really didnt appreicate but I quickly earned their respect.</p>
                 
-                <p>Operations Support manager/Snowboard
-                Instructor
+                <h4>Operations Support manager/Snowboard
+                Instructor</h4>
                 Snozone Milton Keynes
                 10/2013 - 06/2016,
                 </p>
         </div>
-
+       <div>
+        <h4>Josh Turner Fitness</h4>
+        <p>12/2012 - 12/2014</p>
+        <p>Independent Milton Keynes based <span class="hover-image">Personal Trainer<span class="image-popup">
+            <img src="resources/ptjosh.jpg" alt="Me with my PT equipment"></span></span>. I setup, managed and financed this small business on the side.
+             I was initially supported by the Princes Trust for one year before I continued to keep it developing for another year.</p>
+             <h5>Proud moments</h5>
+             <p>Prepared a 24-page business plan which I presented to the board of The Princes Trust and gained their support. Learned and developed my knowledge on how to run a business effectively, sticking to predicted forecasts. Created a small cliental of repeat customers.
+                </p>
+       </div>
     </section>
 
     <div id="content-container">
+        
         <!-- This is where your content will be dynamically displayed -->
     </div>
     
+    <footer>
+        <a href="https://www.linkedin.com/in/joshua-hedges-turner-81311066/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto: front-end-josh@hotmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/JoshT89" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="resources/Joshua CV.pdf" target="_blank">
+            <i class="fas fa-file-download"></i></a>
+
+             <a img ="https://symbols.getvecta.com/stencil_25/37_html5.d4d8050235.svg"> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+      <i class="fab fa-html5"></i> HTML
+      <a img ="https://symbols.getvecta.com/stencil_25/14_css3.d930bfb832.svg"> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+        <i class="fab fa-css3-alt"></i> CSS
+        <a img ="https://symbols.getvecta.com/stencil_25/41_javascript.0ca26ec4ab.svg"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+            <i class="fab fa-js"></i> Javascript
+            <a img ="https://symbols.getvecta.com/stencil_25/72_react.76a8d36b4b.svg"> <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started" target="_blank">
+                <i class="fab fa-react"></i> React
+                <a img ="https://symbols.getvecta.com/stencil_25/73_redux.da27ac619d.svg"> <a href="https://en.wikipedia.org/wiki/Redux_(JavaScript_library)" target="_blank">
+                    <i class="fab fa-reacteurope"></i> Redux
+    </footer>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
 
 

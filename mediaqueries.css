@@ -1,0 +1,51 @@
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 0.9rem;
+        padding: ;
+    }
+    
+    .header, .footer {
+        padding: 10px;
+    }
+
+    .column {
+        width: 100%; /* Stacks columns on top of each other for smaller screens */
+    }
+
+    .hamburger-icon {
+        display: flex;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+@media screen and (max-width: 1200px) {
+#nav-container {
+    display: none;
+}
+#hamburger-nav {
+    display: block;
+}
+}
+    
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 1rem;
+    }
+    
+    .header, .footer {
+        padding: 20px;
+    }
+}
+
+@media(min-width: 768px) {
+    .landing {
+        flex-direction: column; /* Make items display horizontally */
+    }
+}
