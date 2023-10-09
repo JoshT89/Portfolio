@@ -1,7 +1,6 @@
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
     body {
-        font-size: 0.9rem;
-        padding: ;
+        font-size: 0.7rem;
     }
     
     .header, .footer {
@@ -12,9 +11,6 @@
         width: 100%; /* Stacks columns on top of each other for smaller screens */
     }
 
-    .hamburger-icon {
-        display: flex;
-    }
 
     .nav-container {
         display: none;
@@ -24,15 +20,6 @@
         display: block;
     }
 }
-@media screen and (max-width: 1200px) {
-#nav-container {
-    display: none;
-}
-#hamburger-nav {
-    display: block;
-}
-}
-    
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     body {
@@ -44,8 +31,23 @@
     }
 }
 
-@media(min-width: 768px) {
+@media(min-width: 850px) {
     .landing {
         flex-direction: column; /* Make items display horizontally */
     }
+}
+
+.menu-container {
+    display: none; /* Hide the menu container by default */
+    /* Your default styles here */
+}
+
+/* Media query for screens 768px and below */
+@media (max-width: 850px) {
+    .menu-container {
+        display: flex; /* Display the menu container for smaller screens */
+        /* Adjust styles for smaller screens here */
+    }
+    
+    /* Adjust other styles for the menu items, hamburger icon, etc. */
 }

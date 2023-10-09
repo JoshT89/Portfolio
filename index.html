@@ -23,29 +23,23 @@
             </ul>
         </nav>
     </header>
-        <!-- Hamburger menu i cant get working 
-        <nav id="hamburger-nav">
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <ul>
-                    <li><a href="#intro" onclick="toggleMenu()" data-content="#intro">Introduction</a></li>
-                    <li><a href="#about" onclick="toggleMenu()" data-content="#about">About me</a></li>
-                    <li><a href="#journey" onclick="toggleMenu()" data-content="#journey">Journey so far</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()" data-content="#experience">Experience</a></li>
-                </ul>
-            </div>
-            </div>
-            </nav>
-        -->
-    
-     
-
+        
+    <div class="menu-container" id="menu-container">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu-items">
+        <li><a href="#intro" class="clickable-header" data-content="#intro">Introduction</a></li>
+        <li><a href="#about" class="clickable-header" data-content="#about">About me</a></li>
+        <li><a href="#journey" class="clickable-header" data-content="#journey">Journey so far</a></li>
+        <li><a href="#experience" class="clickable-header" data-content="#experience">Experience</a></li>
+        <li><a href="#projects" class="clickable-header" data-content="#projects">Projects coming soon</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </div>
         
     <div id="landing">
         <h1>Joshua Hedges-Turner</h1>
@@ -53,7 +47,7 @@
         <h2>Front-End Developer</h2>
     </div>
 
-    <section id="intro">
+    <section id="intro" class="hidden-section">
         <h1>Hello everybody and welcome to my Portfolio!</h1>
 <h3>My name is Joshua Turner and this year I decided to improve my life dramatically. (Hope you enjoy the pictures!).</h3>
 <div>
@@ -87,7 +81,7 @@
             
     </section>
 
-    <section id="about">
+    <section id="about" class="hidden-section">
         <h1>This section is just all about me, from special moments in my life I'm happy to share.</h1>
         <p>So it all began back in May 1989 when I was born in Milton Keynes but bred in Gozo I've sadly been told "shivers". We did actually move to <span class="hover-image">Gozo<span class="image-popup">
             <img src="resources/babyjosh.jpg" alt="Me as a baby in Gozo."></span>
@@ -160,7 +154,7 @@ able to create a free app in my spare time and achieve this goal myself.</p>
             </div>
     </section>
 
-    <section id="journey">
+    <section id="journey" class="hidden-section">
         <h1>The Journey so far.</h1>
         <p>Back in december 2022, I had just booked a doctor on a truly incredible position. But despite all my efforts it was not meant to be, which feels like you just wasted a week of hard work. 
             That was the moment that changed my mindset completely and I didnt look back. Even though I loved my <span class="hover-image">colleagues<span class="image-popup">
@@ -188,7 +182,7 @@ Luckily Codecademy was the provider my mate used as well and they had nothing bu
         </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="hidden-section">
         <h1>Want to know about my previous experience?</h1>
         <div>
             <h4>Front End Engineer</h4>
@@ -260,8 +254,11 @@ on a daily basis to help manage their financial situations whilst adhering to al
        </div>
     </section>
 
+    <section id="projects" class="hidden-section">
+        <h1>Projects coming soon!</h1>
+</section>
     <div id="content-container">
-        
+        <h1>Projects sdgihbsdgihbsdijg soon!</h1>
         <!-- This is where your content will be dynamically displayed -->
     </div>
     

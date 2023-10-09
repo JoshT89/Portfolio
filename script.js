@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('nav a');
     const hoverElement = document.querySelector('.hover-image');
     const popupImage = document.querySelector('.image-popup');
-
-
-    /* Is meant to make my pictures appear randomly around the screen but not working
+    const things = document.querySelectorAll('.hidden-section');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const menuItems = document.querySelector('.menu-items');
 
     document.addEventListener('DOMContentLoaded', function() {
         hoverElement.addEventListener('mouseenter', function() {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             popupImage.style.display = 'none';
         });
     });
-*/ 
+
     headers.forEach(header => {
         header.addEventListener('click', function(event) {
             event.preventDefault();  
@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             container.innerHTML = contentElement.innerHTML;
             container.style.display = 'block';
+            console.log("here")
             container.scrollIntoView({ behavior: 'smooth' });
 
             window.onbeforeunload = function() {
@@ -63,16 +64,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Uncomment if you wish to activate the hamburger menu functionality
-    /*
-    const toggleMenu = () => {
-        const menu = document.querySelector(".menu-links");
-        const icon = document.querySelector(".hamburger-icon");
-        menu.classList.toggle("open");
-        icon.classList.toggle("open");
-    }
-
-    const hamburgerIcon = document.querySelector('.hamburger-icon');
-    hamburgerIcon.addEventListener('click', toggleMenu);
-    */
+    hamburgerMenu.addEventListener('click', () => {
+        menuItems.classList.toggle('menu-open');
+        // You can also toggle the sections' visibility here if needed
+        things.forEach((thing) => {
+            thing.classList.toggle('hidden-section');
+        });
+    });
 });
