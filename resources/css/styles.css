@@ -204,7 +204,8 @@ p {
 }
 
 .hover-image:hover .image-popup {
-    display: block;
+    display: flex;
+    gap: 10px
 }
 
 /* New style to control the image size */
