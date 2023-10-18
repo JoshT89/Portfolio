@@ -9,23 +9,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const menuItems = document.querySelector('.menu-items');
 
-    document.addEventListener('DOMContentLoaded', function() {
-        hoverElement.addEventListener('mouseenter', function() {
-            const randomX = Math.floor(Math.random() * (window.innerWidth - popupImage.offsetWidth));
-            const randomY = Math.floor(Math.random() * (window.innerHeight - popupImage.offsetHeight));
-    
-            popupImage.style.left = `${randomX}px`;
-            popupImage.style.top = `${randomY}px`;
-    
-            // Show the image
-            popupImage.style.display = 'block';
-        });
-    
-        hoverElement.addEventListener('mouseleave', function() {
-            // Hide the image after moving the mouse away from the hoverElement
-            popupImage.style.display = 'none';
-        });
-    });
+    function randomizeImagePosition() {
+        const randomX = Math.floor(Math.random() * (window.innerWidth - popupImage.offsetWidth));
+        const randomY = Math.floor(Math.random() * (window.innerHeight - popupImage.offsetHeight));
+
+        popupImage.style.left = `${randomX}px`;
+        popupImage.style.top = `${randomY}px`;
+
+        // Show the image
+        popupImage.style.display = 'block';
+    }
+
+    function hideImage() {
+        popupImage.style.display = 'none';
+    }
+
+    // Image random positioning on hover for mouse-based devices
+    hoverElement.addEventListener('mouseenter', randomizeImagePosition);
+    hoverElement.addEventListener('mouseleave', hideImage);
+
+    // Image random positioning on touch for touch-based devices
+    hoverElement.addEventListener('touchstart', randomizeImagePosition);
+    hoverElement.addEventListener('touchend', hideImage);
 
     headers.forEach(header => {
         header.addEventListener('click', function(event) {
@@ -54,19 +59,18 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-    
+
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
-    
+
             window.location = link.getAttribute('href');
         });
     });
 
     hamburgerMenu.addEventListener('click', () => {
         menuItems.classList.toggle('menu-open');
-        // You can also toggle the sections' visibility here if needed
         things.forEach((thing) => {
             thing.classList.toggle('hidden-section');
         });
