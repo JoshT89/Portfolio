@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Image random positioning on touch for touch-based devices
     hoverElement.addEventListener('touchstart', randomizeImagePosition);
     hoverElement.addEventListener('touchend', hideImage);
+    hoverElement.addEventListener('touchmove', function(e) {
+        e.preventDefault();  // This prevents scrolling while dragging over the element on iOS.
+        randomizeImagePosition();
+    });
 
     headers.forEach(header => {
         header.addEventListener('click', function(event) {
