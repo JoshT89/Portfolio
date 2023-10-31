@@ -262,30 +262,17 @@ footer a:hover {
 .project-container {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    padding: 20px;
-    display: flex;
+    display: absolute;
     justify-content: center;
     align-items: center;
 }
 
-.project-video {
-    width: 50%;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
 
 video {
     width: 100%;
     height: auto;
 }
 
-.project-description {
-    padding: 15px;
-}
 
 .project-description h3 {
     margin: 0 0 10px 0;

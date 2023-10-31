@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const headers = document.querySelectorAll('.clickable-header');
     const container = document.getElementById('content-container');
     const landing = document.getElementById('landing');
@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const things = document.querySelectorAll('.hidden-section');
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const menuItems = document.querySelector('.menu-items');
+   
 
     function randomizeImagePosition() {
         const randomX = Math.floor(Math.random() * (window.innerWidth - popupImage.offsetWidth));
@@ -31,14 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Image random positioning on touch for touch-based devices
     hoverElement.addEventListener('touchstart', randomizeImagePosition);
     hoverElement.addEventListener('touchend', hideImage);
-    hoverElement.addEventListener('touchmove', function(e) {
+    hoverElement.addEventListener('touchmove', function (e) {
         e.preventDefault();  // This prevents scrolling while dragging over the element on iOS.
         randomizeImagePosition();
     });
 
     headers.forEach(header => {
-        header.addEventListener('click', function(event) {
-            event.preventDefault();  
+        header.addEventListener('click', function (event) {
+            event.preventDefault();
 
             const contentID = header.getAttribute('data-content');
             const contentElement = document.querySelector(contentID);
@@ -54,14 +55,14 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log("here")
             container.scrollIntoView({ behavior: 'smooth' });
 
-            window.onbeforeunload = function() {
+            window.onbeforeunload = function () {
                 window.scrollTo(0, 0);
             }
         });
     });
 
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
 
             window.scrollTo({
@@ -79,4 +80,4 @@ document.addEventListener('DOMContentLoaded', function() {
             thing.classList.toggle('hidden-section');
         });
     });
-});
+    });
