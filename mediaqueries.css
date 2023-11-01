@@ -51,3 +51,18 @@
     
     /* Adjust other styles for the menu items, hamburger icon, etc. */
 }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .project-video {
+        width: 90%;
+        /* Wider on smaller screens */
+        margin: 20px auto;
+        /* Smaller margin */
+    }
+
+    .project-description p {
+        padding: 15px 10px;
+        /* Adjust padding for smaller screens */
+    }
+}
