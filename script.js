@@ -80,4 +80,5 @@ document.addEventListener('DOMContentLoaded', function () {
             thing.classList.toggle('hidden-section');
         });
     });
-    });
+});
+    
